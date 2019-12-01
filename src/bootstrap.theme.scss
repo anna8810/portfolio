@@ -1,0 +1,21 @@
+// https://uxplanet.org/how-to-customize-bootstrap-b8078a011203
+/* import only the necessary Bootstrap files */
+@import 'bootstrap/scss/_functions.scss';
+@import 'bootstrap/scss/_variables.scss';
+
+/**
+ * Add variable overrides below
+ * Look in "bootstrap/scss/_variables.scss" to see what to override
+ */
+h1, h2, h3, h4, h5 {
+  font-family: 'Playfair Display', serif;
+}
+
+$theme-colors: (
+  primary: yellow,
+);
+
+/**
+ * Finally, import Bootstrap to set the changes!
+ */
+@import 'bootstrap/scss/bootstrap.scss';

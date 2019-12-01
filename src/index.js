@@ -1,12 +1,21 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { render } from 'react-dom';
-import { Fancy } from './components/Fancy';
+import { FadeInSection } from './components/FadeInSection';
+import Projects from './components/Projects';
+import { Info } from './components/Info';
+import { Header } from './components/Header';
+import './bootstrap.theme.scss';
 
 const App = () => (
-  <Fragment>
-    <h1>Hej Anna!</h1>
-    <Fancy></Fancy>
-  </Fragment>
+  <div className='App'>
+    <Header />
+    <div className='container'>
+      <FadeInSection>
+        <Info />
+        <Projects />
+      </FadeInSection>
+    </div>
+  </div>
 );
 
 render(<App />, document.getElementById('__root'));
